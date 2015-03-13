@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
-  get 'info/faq'
-
-  get 'info/profile'
 
   resources :pictures
+
+  root 'categories#index'
+
+  get '/faq' => 'info#faq'
+
+  get '/profile' => 'info#profile'
 
   resources :categories
 
