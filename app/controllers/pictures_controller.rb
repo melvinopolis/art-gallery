@@ -15,10 +15,14 @@ class PicturesController < ApplicationController
   # GET /pictures/new
   def new
     @picture = Picture.new
+    @categories = Category.all 
+    @users = User.all
   end
 
   # GET /pictures/1/edit
   def edit
+    @categories = Category.all 
+    @users = User.all
   end
 
   # POST /pictures
