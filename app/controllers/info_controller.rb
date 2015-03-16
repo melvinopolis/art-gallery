@@ -2,6 +2,10 @@ class InfoController < ApplicationController
   def faq
   end
 
-  def profile
+  def members
+  	@users = User.all
+  end
+
+  def contact
   end
 end

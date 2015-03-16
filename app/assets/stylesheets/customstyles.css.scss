@@ -18,33 +18,39 @@ ul {
 	list-style: none;
 }
 
+a {
+	color: $darkGrey;
+	&:hover {
+		color: $blue;
+		text-decoration: none;
+	}
+}
+
 .header {
 	width: 100%;
 	background-color: $blue;
 }
 
-.thumbnails img {
+.thumbnails {
+	img {
 	border: 3px solid $darkGrey;
-}
-
-.thumbnails li {
+	}
+	li {
 	display: inline-block;
+	}
 }
 
 footer {
 	background-color: $yellow;
 	width: 100%;
 	position: absolute;
-
-}
-
-footer li {
+	li {
 	display: inline-block;
 	float: right;
 	padding: 1%;
-}
-
-footer p {
+	}
+	p {
 	float: left;
 	padding: 1%;
+	}
 }

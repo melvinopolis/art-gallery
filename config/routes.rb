@@ -7,7 +7,9 @@ Rails.application.routes.draw do
 
   get '/faq' => 'info#faq'
 
-  get '/profile' => 'info#profile'
+  get '/members' => 'info#members'
+
+  get '/contact' => 'info#contact'
 
   resources :categories
 
