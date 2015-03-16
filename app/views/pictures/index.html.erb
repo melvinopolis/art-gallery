@@ -1,8 +1,13 @@
 <div class="container-fluid">
   <h1 class="header">Browse All Art</h1>
   <div class="row">
-    <div class="col-xs-6 col-s-4 col-lg-2">
-      <!-- thumbnails will go here -->
+    <% @pictures.each do |picture| %>
+
+    <div class="col-xs-6 col-s-4 col-lg-2" id="pic-site">
+
+    <%= image_tag(picture.image_url) if picture.image? %>
+    
     </div>
+    <% end %>
   </div>
 </div>
