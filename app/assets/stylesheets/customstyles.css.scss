@@ -1,0 +1,50 @@
+$yellow: #f6f049;
+$blue: #6ad6e3;
+$darkGrey: #383838;
+
+/** {
+	border: 1px solid black;
+}*/
+body {
+	font-family: 'PT Sans Narrow', sans-serif;
+	color: $darkGrey;
+}
+
+h1 {
+	font-family: 'Give You Glory', cursive;
+}
+
+ul {
+	list-style: none;
+}
+
+.header {
+	width: 100%;
+	background-color: $blue;
+}
+
+.thumbnails img {
+	border: 3px solid $darkGrey;
+}
+
+.thumbnails li {
+	display: inline-block;
+}
+
+footer {
+	background-color: $yellow;
+	width: 100%;
+	position: absolute;
+
+}
+
+footer li {
+	display: inline-block;
+	float: right;
+	padding: 1%;
+}
+
+footer p {
+	float: left;
+	padding: 1%;
+}
