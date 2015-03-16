@@ -33,13 +33,27 @@ a {
 	}
 }
 
-nav .btn {
+nav {
+	.btn {
 	background-color: $yellow;
+	}
+	.nav-icon {
+		height: 30px;
+		margin-right: 10px;
+		border-radius: 50%
+	}
 }
 
 .header {
 	width: 100%;
 	background-color: $blue;
+}
+
+.profile h1 {
+	width: 100%;
+	background-color: $blue;
+	text-align: right;
+	padding-right: 3px;
 }
 
 .thumbnails {
@@ -56,6 +70,25 @@ nav .btn {
 		display: inline-block;
 	}
 }
+
+.avatar img {
+	margin: auto;
+	border-radius: 50%;
+}
+
+.members {
+	text-align: center;
+	margin: 2%;
+	li {
+		display: inline-block;
+	}
+	img {
+		border-radius: 50%;
+		margin: auto;
+		max-width: 200px;
+	}
+}
+	
 
 footer {
 	background-color: $yellow;
