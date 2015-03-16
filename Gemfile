@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+
+
+gem 'carrierwave'
 gem 'devise'
 gem 'bootstrap_form'
 gem "twitter-bootstrap-rails"
