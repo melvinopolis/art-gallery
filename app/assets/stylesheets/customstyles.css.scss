@@ -1,17 +1,24 @@
 $yellow: #f6f049;
 $blue: #6ad6e3;
 $darkGrey: #383838;
+$lightGrey: #f2f1f1;
 
 /** {
 	border: 1px solid black;
 }*/
+
 body {
+	background-color: $lightGrey;
 	font-family: 'PT Sans Narrow', sans-serif;
 	color: $darkGrey;
 }
 
 h1 {
 	font-family: 'Give You Glory', cursive;
+	padding-left: 3px;
+	a:hover {
+		color: $yellow;
+	}
 }
 
 ul {
@@ -26,17 +33,27 @@ a {
 	}
 }
 
+nav .btn {
+	background-color: $yellow;
+}
+
 .header {
 	width: 100%;
 	background-color: $blue;
 }
 
 .thumbnails {
-	img {
+/*	img {
 	border: 3px solid $darkGrey;
 	}
 	li {
 	display: inline-block;
+	}*/
+	.thumb {
+		height: 150px;
+		width: 150px;
+		border: 5px solid $darkGrey;
+		display: inline-block;
 	}
 }
 
