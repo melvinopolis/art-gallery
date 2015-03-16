@@ -34,13 +34,20 @@ a {
 }
 
 nav {
+	font-size: 1.1em;
 	.btn {
 	background-color: $yellow;
+	}
+	li {
+		padding-top: 5px;
 	}
 	.nav-icon {
 		height: 30px;
 		margin-right: 10px;
 		border-radius: 50%
+	}
+	.navbar-brand img {
+		height: 30px;
 	}
 }
 
