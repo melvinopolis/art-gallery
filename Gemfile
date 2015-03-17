@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 
 gem 'carrierwave'
+gem 'mini_magick', '3.8.0'
 gem 'devise'
 gem 'bootstrap_form'
 gem "twitter-bootstrap-rails"

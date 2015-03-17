@@ -29,7 +29,7 @@ class PicturesController < ApplicationController
   # POST /pictures
   # POST /pictures.json
   def create
-    @picture = Picture.new(picture_params)
+    @picture = Picture.new
 
     respond_to do |format|
       if @picture.save

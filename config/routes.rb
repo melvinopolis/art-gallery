@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
   devise_for :users
+  match 'users/:id' => 'users#show', via: :get, as: 'profile'
+
   resources :pictures
 
   root 'categories#index'
