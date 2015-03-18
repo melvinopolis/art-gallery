@@ -9,8 +9,18 @@
             <% end %>
         </div>
         <div class="col-xs-12 col-sm-6 bio">
-        	<p><strong>Name:</strong> <%= @user.first_name %> <%= @user.last_name.first %></p>
+        	<p><strong>Name: </strong><%= @user.first_name %> <%= @user.last_name.first %></p>
+            <p><strong>Location: </strong><%= @user.location %></p>
         	<p><strong>About: </strong><%= @user.bio %></p>
+            <p><strong>Interests: </strong><%= @user.interests %></p>
+
+            <p><strong>Contact:</strong></p>
+            <ul class="list-inline contact-links">
+                <li><%= link_to image_tag('twitter.png'), @user.twitter if @user.twitter? %></li>
+                <li><%= link_to image_tag('facebook.png'), @user.facebook if @user.facebook? %></li>
+                <li><%= link_to image_tag('instagram.png'), @user.instagram if @user.instagram? %></li>
+                <li><%= link_to image_tag('tumblr.png'), @user.tumblr if @user.tumblr? %></li>
+            </ul>
         </div>
     </div>
 

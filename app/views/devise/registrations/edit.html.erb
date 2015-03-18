@@ -18,11 +18,35 @@
       </div>
 
       <div class="field">
-        <%= f.email_field :email %>
+        <%= f.email_field :email, placeholder: "name@email.com" %>
       </div>
 
       <div class="field">
-        <%= f.text_area :bio %>
+        <%= f.text_field :location, placeholder: "Chapel Hill, NC" %>
+      </div>
+
+      <div class="field">
+        <%= f.text_field :twitter, placeholder: "http://www.twitter.com/username" %>
+      </div>
+
+      <div class="field">
+        <%= f.text_field :facebook, placeholder: "http://www.facebook.com/username" %>
+      </div>
+
+      <div class="field">
+        <%= f.text_field :instagram, placeholder: "http://www.instagram.com/username" %>
+      </div>
+
+      <div class="field">
+        <%= f.text_field :tumblr, placeholder: "http://usernmame.tumblr.com" %>
+      </div>
+
+      <div class="field">
+        <%= f.text_area :bio, placeholder: "Tell us about yourself!" %>
+      </div>
+
+      <div class="field">
+        <%= f.text_area :interests, placeholder: "What are you interested in?" %>
       </div>
 
       <div class="field">
@@ -35,17 +59,17 @@
       <% end %>
 
       <div class="field">
-        <i>Leave blank if you don't want to change your password</i>
-        <%= f.password_field :password, autocomplete: "off" %>
+        <%= f.password_field :current_password, autocomplete: "off", placeholder: "Enter your current password to save your changes!" %>
+      </div>
+
+      <legend>Change your Password</legend>
+
+      <div class="field">
+        <%= f.password_field :password, autocomplete: "off", placeholder: "Leave blank if you don't want to change!" %>
       </div>
 
       <div class="field">
         <%= f.password_field :password_confirmation, autocomplete: "off" %>
-      </div>
-
-      <div class="field">
-        <i>We need your current password to save your changes!</i>
-        <%= f.password_field :current_password, autocomplete: "off" %>
       </div>
 
       <div class="actions">
