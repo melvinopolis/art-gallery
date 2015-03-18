@@ -7,7 +7,7 @@
 
   
   
-    <%= link_to image_tag(picture.image_url) if picture.image? %>
+    <%= link_to image_tag(picture.image_url), picture_path(picture.id)%>
 
 
     
