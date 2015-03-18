@@ -16,34 +16,13 @@
  *= require rails_bootstrap_forms
  */
 
-.image img{
-	
-	margin: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.image h1{
-	text-align: center;
-}
-
-
-.text-sec {
-	background-color: #fff;
-	width: 500px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-radius: 25px;
-}
-
-.notes h2{
-	font-size: 1.5em;
-}
-
 #notice {
 	text-align: center;
 }
 
+#alert {
+	text-align: center;
+}
 
 
 

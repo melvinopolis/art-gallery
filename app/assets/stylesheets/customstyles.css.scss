@@ -64,12 +64,6 @@ nav {
 }
 
 .thumbnails {
-/*	img {
-	border: 3px solid $darkGrey;
-	}
-	li {
-	display: inline-block;
-	}*/
 	.thumb {
 		height: 150px;
 		width: 150px;
@@ -84,20 +78,15 @@ nav {
 }
 
 .members {
-	text-align: center ;
-	padding-left: 20px;
-
+	text-align: center;
 	li {
 		display: inline-block;
-		float: left;
 	}
 	img {
 		border-radius: 50%;
-		margin-left: 50px;
-		max-width: 200px;
-		padding: 0;
-		
-
+		margin: auto;
+		padding: 10px 0;
+		width: 200px;
 	}
 }
 	

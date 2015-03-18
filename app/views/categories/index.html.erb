@@ -1,22 +1,16 @@
 <div class="container-fluid">
-        <% @categories.each do |category| %>
-                <div class="header"><h1><%= link_to category.name, category %></h1></div>
+    <% @categories.each do |category| %>
+        <div class="header">
+            <h1><%= link_to category.name, category %></h1>
+        </div>
 
-                <div class="row">
-                      
-                     <% category.pictures.each do |picture|%>
-
-                    <div class="col-xs-6 col-s-4 col-lg-2" id="cat-pic">
-
+        <div class="row">
+            <% category.pictures.each do |picture|%>
+                <div class="col-xs-6 col-s-4 col-lg-2" id="cat-pic">
                     <%= link_to image_tag(picture.image_url), picture_path(picture.id) %>
-
-                    
-
-                    
-                        
-                    </div>
-                    <% end %>
                 </div>
-        <% end %>
+                    <% end %>
+        </div>
+            <% end %>
 </div>
     

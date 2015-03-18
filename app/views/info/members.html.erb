@@ -2,14 +2,14 @@
 	<h1 class="header">Members</h1>
 	<div class="row">
 		
-			<ul class="list-inline members" >	
+			<ul class="list-inline center-block members" >	
 				<% @users.each do |user| %>
 					<% if user.avatar? == true %>
-						<li class="col-xs-4 col-sm-3 col-m-2"><%= link_to image_tag(user.avatar_url, class: "img-responsive"), profile_path(user.id) %><br>
-						<p><%= user.username %></li></p>
+						<li class="col-xs-6 col-sm-3 col-m-2"><%= link_to image_tag(user.avatar_url, class: "img-responsive"), profile_path(user.id) %>
+						<%= user.username %></li>
 					<% else %>
-						<li class="col-xs-4 col-sm-3 col-m-2"><%= link_to image_tag("gllry.png", class: "img-responsive"), profile_path(user.id) %><br>
-						<p><%= user.username %></li></p>
+						<li class="col-xs-4 col-sm-3 col-m-2"><%= link_to image_tag("gllry.png", class: "img-responsive"), profile_path(user.id) %>
+						<%= user.username %></li>
 					<% end %>
 				<% end %>
 				<!-- Need to figure how to make them not stacked... -->
