@@ -2,7 +2,11 @@
 	<div class="profile"><h1><%= @user.username %></h1></div>
 	<div class="row">
         <div class="col-xs-12 col-sm-6 avatar">
-        	<%= image_tag(@user.avatar_url, class: "img-responsive") if @user.avatar? %>
+        	<% if @user.avatar? == true %>
+                <%= image_tag(@user.avatar_url, class: "img-responsive") %>
+            <% else %>
+                <%= image_tag("gllry.png", class: "img-responsive") %>
+            <% end %>
         </div>
         <div class="col-xs-12 col-sm-6 bio">
         	<p><strong>Name:</strong> <%= @user.first_name %> <%= @user.last_name.first %></p>
