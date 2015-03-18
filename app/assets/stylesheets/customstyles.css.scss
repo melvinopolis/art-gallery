@@ -85,14 +85,16 @@ nav {
 
 .members {
 	text-align: center;
-	margin: 2%;
+
 	li {
 		display: inline-block;
 	}
 	img {
 		border-radius: 50%;
-		margin: auto;
+		margin: 0;
 		max-width: 200px;
+		float: left;
+
 	}
 }
 	
