@@ -17,10 +17,10 @@
 
             <p><strong>Contact:</strong></p>
             <ul class="list-inline contact-links">
-                <li><%= link_to image_tag('twitter.png'), @user.twitter if @user.twitter? %></li>
-                <li><%= link_to image_tag('facebook.png'), @user.facebook if @user.facebook? %></li>
-                <li><%= link_to image_tag('instagram.png'), @user.instagram if @user.instagram? %></li>
-                <li><%= link_to image_tag('tumblr.png'), @user.tumblr if @user.tumblr? %></li>
+                <li><%= link_to image_tag('twitter.png'), @user.twitter, :target => "_blank" if @user.twitter? %></li>
+                <li><%= link_to image_tag('facebook.png'), @user.facebook, :target => "_blank" if @user.facebook? %></li>
+                <li><%= link_to image_tag('instagram.png'), @user.instagram, :target => "_blank" if @user.instagram? %></li>
+                <li><%= link_to image_tag('tumblr.png'), @user.tumblr, :target => "_blank" if @user.tumblr? %></li>
             </ul>
         </div>
     </div>

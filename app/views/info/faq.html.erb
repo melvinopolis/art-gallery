@@ -27,9 +27,16 @@
 			<p>A: Right now, please don't! But soon we will implement an email system which will allow for password recovery.</p>
 		</div>
 
-		<div class="well">
+		<% if user_signed_in? %>
+			<div class="well">
+				<p><strong>Q: Can I delete my account if I don't like it?</strong></p>
+				<p>A: We hope you don't want to leave, but if you do...here is the link: <%= link_to "Cancel my account", registration_path(current_user), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-default" %></p>
+			</div>
+		<% else %>
+			<div class="well">
 			<p><strong>Q: Can I delete my account if I don't like it?</strong></p>
-			<p>A: We hope you don't want to leave, but if you do...here is the link: <%= link_to "Cancel my account", registration_path(current_user), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-default" %></p>
-		</div>
+				<p>A: We hope you don't want to leave, but if you do...here is the link: [must be logged in to see this link!]"</p>
+			</div>
+		<% end %>
 	</div> <!-- end faq -->
 </div> <!-- end container -->
