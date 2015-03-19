@@ -1,11 +1,35 @@
 <div class="container-fluid">
 	<h1 class="header">FAQ</h1>
-	<p><strong>Q: What is Gllry?</strong></p>
-	<p>Gllry is an application designed to display your work under your account name, like an online portfolio.</p>
-	<p><strong>Q: Do you have premium membership?</strong></p>
-	<p>Everybody is premium!</p>
-	<p><strong>Q: Are you in the Illuminati?</strong></p>
-	<p>I dont know. Am I? (yes)</p>
-	<p><strong>Q: Do you have a motto?</strong></p>
-	<p>If fail to plan, you plan to fail.</p>
-</div>
+	
+	<div class="faq">
+		<div class="well">
+			<p><strong>Q: What is gllry?</strong></p>
+			<p>Gllry is a web application designed to display your artwork, like an online portfolio!</p>
+		</div>
+
+		<div class="well">
+			<p><strong>Q: Do you have premium memberships?</strong></p>
+			<p>A: Everybody is premium!</p>
+		</div>
+
+		<div class="well">
+			<p><strong>Q: Are there any other features coming to gllry?</strong></p>
+			<p>A: Yes! Keep an eye out soon for comments, favorites, and username mentions!</p>
+		</div>
+
+		<div class="well">
+			<p><strong>Q: Do you have a life motto?</strong></p>
+			<p>A: If you fail to plan, you plan to fail.</p>
+		</div>
+
+		<div class="well">
+			<p><strong>Q: What do I do if I forget my password?</strong></p>
+			<p>A: Right now, please don't! But soon we will implement an email system which will allow for password recovery.</p>
+		</div>
+
+		<div class="well">
+			<p><strong>Q: Can I delete my account if I don't like it?</strong></p>
+			<p>A: We hope you don't want to leave, but if you do...here is the link: <%= link_to "Cancel my account", registration_path(current_user), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-default" %></p>
+		</div>
+	</div> <!-- end faq -->
+</div> <!-- end container -->
